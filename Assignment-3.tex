@@ -137,21 +137,21 @@ https://github.com/ASHWITHA-11008/Assignment-3/blob/main/Assignment-3.tex
 
 \section{Problem}
 
-10 balls are placed in 10 boxes independently at random. Assuming that all 10 boxes were initially empty,what is the expected number of boxes that remain empty ?\\
+10 balls are placed in 10 boxes independently at random. Assuming that all 10 boxes were initially empty,what is the expected number of boxes that remain empty ?
 
-(a)$\left(\frac{9}{10}\right)^9$\\
+\begin{enumerate}
+    \item $\left(\frac{9}{10}\right)^9$\\
+    \item $\frac{9^9}{10^{10}}$\\
+    \item $\frac{9^{10}}{10^9}$\\
+    \item $\left(\frac{9}{10}\right)^{10}$
+\end{enumerate}
 
-(b)$\frac{9^9}{10^{10}}$\\
-
-(c)$\frac{9^{10}}{10^9}$\\
-
-(d)$\left(\frac{9}{10}\right)^{10}$
 
 \section{Solution:}
 
-Let X be the random variable for the number of boxes to be empty. $i=1,2,3,......,10$,define $X_i$ by $X_i=1$ if box i ends up with zero balls, and $X_i=0$ otherwise\\
+Let X be the random variable for the number of boxes to be empty. $i=1,2,3,......,10$,define $X_i$ by $X_i=1$ if box i ends up with zero balls, and $X_i=0$ otherwise.\\
 
-$X=\sum_{i=1}^{i=10}X_i$\\
+\implies$X=\sum_{i=1}^{i=10}X_i$\\
 
 $E[X]=E[\sum_{i=1}^{i=10} X_i]$\\
 
@@ -160,7 +160,8 @@ For any $i$, $X_i=1$. So,
 $E[X_i]=P(X_i=1) $\\
 
 Probability of box $i$ is empty,\\
-$P(X_i=1)=\left({\frac{9}{10}}\right)^{10}$\\
+
+$P(X_i=1)=\Comb{10}{0}{\brak{\frac{1}{10}}^0}{\brak{\frac{9}{10}}^{10-0}}$\\
 
 Thus,
 $E[X_i]=\left({\frac{9}{10}}\right)^{10}$
