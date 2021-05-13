@@ -149,15 +149,14 @@ https://github.com/ASHWITHA-11008/Assignment-3/blob/main/Assignment-3.tex
 
 \section{Solution:}
 
-Let X be the random variable for the number of boxes to be empty. $i=1,2,3,......,10$,define $X_i$ by $X_i=1$ if box i ends up with zero balls, and $X_i=0$ otherwise.\\
+Let X be the random variable for the number of boxes to be empty. $i=1,2,3,......,10$,define $X_i$ by $X_i=1$ if box i ends up with zero balls, and $X_i=0$ otherwise.
+\begin{align}
+\implies X & =\sum_{i=1}^{i=10}X_i\\
+E[X] & =E[\sum_{i=1}^{i=10} X_i]\\
+For\:\ any\:\ i\:\ ,\:\ X_i=1. \:\ So,\:\
+E[X_i] & =P(X_i=1)    
+\end{align}
 
-\implies$X=\sum_{i=1}^{i=10}X_i$\\
-
-$E[X]=E[\sum_{i=1}^{i=10} X_i]$\\
-
-For any $i$, $X_i=1$. So,
-
-$E[X_i]=P(X_i=1) $\\
 
 Probability of box $i$ is empty,\\
 
@@ -167,12 +166,12 @@ Thus,
 $E[X_i]=\left({\frac{9}{10}}\right)^{10}$
 
 Expected number of boxes that remain empty are,\\
-\begin{align*}
+\begin{align}
 E[X] & =\sum_{i=1}^{i=10}\left({\frac{9}{10}}\right)^{10}\\
      & =10\left(\frac{9^{10}}{10^{10}}\right)\\
      & =\frac{9^{10}}{10^9}
-\end{align*}\\
+\end{align}
 
-So, option c is correct.
+So, option 3 is correct.
 
 \end{document}
