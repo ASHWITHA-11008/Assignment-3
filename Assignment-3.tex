@@ -152,19 +152,21 @@ https://github.com/ASHWITHA-11008/Assignment-3/blob/main/Assignment-3.tex
 Let X be the random variable for the number of boxes to be empty. $i=1,2,3,......,10$,define $X_i$ by $X_i=1$ if box i ends up with zero balls, and $X_i=0$ otherwise.
 \begin{align}
 \implies X & =\sum_{i=1}^{i=10}X_i\\
-E[X] & =E[\sum_{i=1}^{i=10} X_i]\\
-For\:\ any\:\ i\:\ ,\:\ X_i=1. \:\ So,\:\
+X_i=1 \:\ \forall i=1,2,3,.....10. \:\ So,\:\
 E[X_i] & =P(X_i=1)    
 \end{align}
 
 
 Probability of box $i$ is empty,\\
 
-$P(X_i=1)=\Comb{10}{0}{\brak{\frac{1}{10}}^0}{\brak{\frac{9}{10}}^{10-0}}$\\
-
+\begin{align}
+P(X_i=k)=\Comb{n}{k}\times{\left({\frac{1}{10}}\right)}^k\times{\left({\frac{9}{10}}\right)}^{n-k}\\
+P(X_i=1)=\Comb{10}{0}{\brak{\frac{1}{10}}^0}{\brak{\frac{9}{10}}^{10-0}}
+\end{align}
 Thus,
-$E[X_i]=\left({\frac{9}{10}}\right)^{10}$
-
+\begin{align}
+E[X_i]=\left({\frac{9}{10}}\right)^{10}
+\end{align}
 Expected number of boxes that remain empty are,\\
 \begin{align}
 E[X] & =\sum_{i=1}^{i=10}\left({\frac{9}{10}}\right)^{10}\\
